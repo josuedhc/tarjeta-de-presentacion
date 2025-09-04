@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta Digital - Francisco E. Moyano Gómez</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@tailwindcss/forms"></script>
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion/dist/framer-motion.umd.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 flex justify-center items-center min-h-screen transition duration-300">
+
+  <!-- Tarjeta principal -->
+  <div class="bg-white dark:bg-gray-800 shadow-2xl rounded-3xl max-w-sm w-full p-6 text-center relative transition duration-300">
+
+    <!-- Imagen -->
+    <div class="relative">
+      <img class="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform duration-300" 
+           src="logo.png" 
+           alt="Foto de perfil">
+      <span class="absolute bottom-2 right-[35%] bg-green-500 w-4 h-4 rounded-full border-2 border-white"></span>
+    </div>
+
+    <!-- Nombre y título -->
+    <h1 class="text-2xl font-bold mt-4 text-gray-800 dark:text-white">Francisco E. Moyano Gómez</h1>
+    <p class="text-blue-600 dark:text-blue-400 text-sm font-semibold">Director Comercial</p>
+    <p class="text-gray-500 dark:text-gray-300 text-sm">Acabados Finos Textiles </p>
+    <p class="text-gray-500 dark:text-gray-300 text-sm">+52 (222) 224-07-88 / 224-09-16 </p>
+    <p class="text-gray-500 dark:text-gray-300 text-sm">femoyano@acafintex.com </p>
+
+    <!-- Botón guardar contacto -->
+    <div class="mt-4">
+      <a href="contacto.vcf" download
+         class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full shadow-lg transition duration-300">
+        Guardar contacto
+      </a>
+    </div>
+
+    <!-- Redes sociales 
+    <div class="flex justify-center mt-5 space-x-5">
+      <a href="https://linkedin.com" target="_blank" class="hover:scale-125 transition-transform">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="w-7 h-7 dark:invert" alt="LinkedIn">
+      </a>
+      <a href="https://github.com" target="_blank" class="hover:scale-125 transition-transform">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" class="w-7 h-7 dark:invert" alt="GitHub">
+      </a>
+      <a href="https://instagram.com" target="_blank" class="hover:scale-125 transition-transform">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="w-7 h-7 dark:invert" alt="Instagram">
+      </a>
+    </div>
+-->
+    <!-- QR dinámico -->
+    <div class="mt-6">
+      <h2 class="text-gray-700 dark:text-gray-300 font-semibold text-sm mb-2">Escanea mi contacto</h2>
+      <img class="mx-auto w-36 h-36 border rounded-xl shadow hover:scale-105 transition-transform duration-300" 
+           src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://miportafolio.com/contacto.vcf" 
+           alt="Código QR">
+    </div>
+
+    <!-- Botón visitar sitio -->
+    <div class="mt-5">
+      <a href="https://acafintex.com" target="_blank"
+         class="bg-gray-800 hover:bg-gray-900 text-white px-5 py-2 rounded-full shadow transition duration-300">
+         Visitar mi página
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>
